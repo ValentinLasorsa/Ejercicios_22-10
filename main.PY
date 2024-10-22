@@ -8,7 +8,6 @@ def listaMenorAMayor(lista):
                 aux=lista[j]
                 lista[j] = lista[j + 1]
                 lista[j+1]=aux
-    print(lista)
     return lista
 def listaMayorAMenor(lista):
     for i in range(len(lista) - 1):
@@ -17,7 +16,6 @@ def listaMayorAMenor(lista):
                 aux=lista[j]
                 lista[j] = lista[j + 1]
                 lista[j+1]=aux
-    print(lista)
     return lista
 # Inicio programa
 #Ej 1
@@ -27,6 +25,7 @@ for j in range(1,16):
     sueldo=int(input(f"Ingrese el sueldo del {j} empleado "))
     sueldos.append(sueldo)
 listaMenorAMayor(sueldos)
+print("La lista de los sueldos de orden creciente quedó así:",sueldos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #Ej 2
@@ -36,6 +35,7 @@ for j in range(1,16):
     sueldo=int(input(f"Ingrese el sueldo del {j} empleado "))
     sueldos.append(sueldo)
 listaMayorAMenor(sueldos)
+print("La lista de los sueldos de orden decreciente quedó así:",sueldos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #Ej 3
@@ -82,8 +82,8 @@ for j in range(5):
     aux=listaProductos[productoRandom]
     print("El producto con precio $"+str(aux)+" será aumentado")
     listaProductos[productoRandom]=aux+((aux*15)/100)
-print("La nueva lista con los aumentos queda así:")
 listaMenorAMayor(listaProductos)
+print("La nueva lista con los aumentos queda así:",listaProductos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #Ej 6
@@ -97,6 +97,6 @@ for h in sueldos:
     h=h+((h*20)/100)
     sueldosAumentados.append(h)
 listaMayorAMenor(sueldosAumentados)
-print("Los sueldos originales:",sueldos, "- La lista de sueldos con el 20% extra:",sueldosAumentados)
+print("Los sueldos originales:",sueldos,"- La lista de sueldos con el 20% extra:",sueldosAumentados)
 input("\033[1mPresione enter para salir\033[0m")
 os.system('cls')
