@@ -98,5 +98,5 @@ for h in sueldos:
     sueldosAumentados.append(h)
 listaMayorAMenor(sueldosAumentados)
 print("Los sueldos originales:",sueldos, "- La lista de sueldos con el 20% extra:",sueldosAumentados)
-input("\033[1mPresione enter para continuar\033[0m")
+input("\033[1mPresione enter para salir\033[0m")
 os.system('cls')
