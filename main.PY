@@ -20,6 +20,7 @@ def listaMayorAMenor(lista):
     print(lista)
     return lista
 # Inicio programa
+#Ej 1
 print("Ejercicio 1")
 sueldos=[]
 for j in range(1,16):
@@ -28,7 +29,7 @@ for j in range(1,16):
 listaMenorAMayor(sueldos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-
+#Ej 2
 print("Ejercicio 2")
 sueldos=[]
 for j in range(1,16):
@@ -37,7 +38,7 @@ for j in range(1,16):
 listaMayorAMenor(sueldos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-
+#Ej 3
 print("Ejercicio 3")
 listaNumeros=[]
 listaPositivos=[]
@@ -54,7 +55,7 @@ listaMayorAMenor(listaNegativos)
 print("La lista original quedó así:",listaNumeros,"- La lista positiva así:",listaPositivos,"- Y La negativa así:",listaNegativos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-
+#Ej 4
 print("Ejercicio 4")
 numerosRandoms=[]
 for j in range(25):
@@ -65,7 +66,7 @@ listaMayorAMenor(numerosRandoms)
 print("La lista decreciente quedaría así:",numerosRandoms)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-
+#Ej 5
 print("Ejercicio 5")
 listaProductos=[]
 productoRepetido=[]
@@ -85,7 +86,7 @@ print("La nueva lista con los aumentos queda así:")
 listaMenorAMayor(listaProductos)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-
+#Ej 6
 print("Ejercicio 6")
 sueldos=[]
 sueldosAumentados=[]
