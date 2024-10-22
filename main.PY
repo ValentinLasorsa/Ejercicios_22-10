@@ -19,6 +19,7 @@ def listaMayorAMenor(lista):
     return lista
 # Inicio programa
 #Ej 1
+"""
 print("Ejercicio 1")
 sueldos=[]
 for j in range(1,16):
@@ -67,13 +68,17 @@ print("La lista decreciente quedaría así:",numerosRandoms)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #Ej 5
+"""
 print("Ejercicio 5")
+listaPrecios=[]
 listaProductos=[]
 productoRepetido=[]
 #Ingreso precio de los productos
 for j in range(1,16):
-    producto=int(input(f"Ingrese el {j} producto "))
-    listaProductos.append(producto)
+    productoNombre=input(f"Ingrese el nombre del {j} producto ")
+    listaProductos.append(productoNombre)
+    productoPrecio=int(input(f"Ingrese el precio del {j} producto "))
+    listaPrecios.append(productoPrecio)
 #Aumento de precios
 for j in range(5):
     aux=0
@@ -81,14 +86,19 @@ for j in range(5):
     while productoRandom in productoRepetido:
         productoRandom=random.randint(0,14)
     productoRepetido.append(productoRandom)
-    aux=listaProductos[productoRandom]
-    print("El producto con precio $"+str(aux)+" será aumentado")
-    listaProductos[productoRandom]=aux+((aux*15)/100)
+    aux=listaPrecios[productoRandom]
+    nombre=listaProductos[productoRandom]
+    print("El producto "+nombre+" será aumentado")
+    listaPrecios[productoRandom]=aux+((aux*15)/100)
+listaMenorAMayor(listaPrecios)
 listaMenorAMayor(listaProductos)
-print("La nueva lista con los aumentos queda así:",listaProductos)
+for productos in range(len(listaProductos)):
+    print(f"{listaProductos[productos]} a ${listaPrecios[productos]}")
+
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #Ej 6
+"""
 print("Ejercicio 6")
 sueldos=[]
 sueldosAumentados=[]
@@ -102,3 +112,4 @@ listaMayorAMenor(sueldosAumentados)
 print("Los sueldos originales:",sueldos,"- La lista de sueldos con el 20% extra:",sueldosAumentados)
 input("\033[1mPresione enter para salir\033[0m")
 os.system('cls')
+"""
