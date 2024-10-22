@@ -70,9 +70,11 @@ os.system('cls')
 print("Ejercicio 5")
 listaProductos=[]
 productoRepetido=[]
+#Ingreso precio de los productos
 for j in range(1,16):
     producto=int(input(f"Ingrese el {j} producto "))
     listaProductos.append(producto)
+#Aumento de precios
 for j in range(5):
     aux=0
     productoRandom=random.randint(0,14)
